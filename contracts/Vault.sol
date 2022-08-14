@@ -29,7 +29,8 @@ contract Vault {
         _;
     }
 
-    uint[] id;
+    uint[] public id;
+    
     BeneficiaryProperties[] public bp;
 
     modifier hasTimeElapsed(uint _id) {
